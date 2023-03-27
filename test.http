@@ -1,0 +1,21 @@
+GET http://localhost:80/api/item?id=99
+Accept: application/json
+
+###
+GET http://localhost:3000/api/farms
+Accept: application/json
+
+####
+POST http://localhost:3000/api/farm/create
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "name": "test",
+  "address": "1600+Amphitheatre+Parkway,+Mountain+View,+CA",
+  "size": 23.4,
+  "yield": 12.3
+}
+
+
+###
